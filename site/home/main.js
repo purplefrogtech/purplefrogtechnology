@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return;
   }
 
-  hideBtn.addEventListener('click', function () {   
+  hideBtn.addEventListener('click', function () {
     // Menü açık mı kapalı mı kontrol et ve ikonları güncelle
     if (sidebarList.style.display === 'block') {
       sidebarList.style.display = 'none';
@@ -84,7 +84,79 @@ function toggleMusic() {
   isPlaying = !isPlaying;
 }
 
-
-
-
 // Music Button
+
+
+// PROJECT SECTION
+
+const projectCarousel = document.querySelector('.project-carousel');
+const projectCards = document.querySelectorAll('.project-card');
+const projectSlider = document.getElementById('project-slider');
+const projectPrevButton = document.getElementById('project-prev');
+const projectNextButton = document.getElementById('project-next');
+
+// Yeni kart genişliği ve margin ile hesaplamalar
+const projectCardWidth = 550; // Kart genişliği (550px)
+const projectVisibleCards = 3; // Görünen kart sayısı
+let maxIndex = projectCards.length - projectVisibleCards + 1; // Kaydırma payı arttırıldı
+let projectCurrentIndex = 0;
+
+// Başlangıç ayarları
+updateProjectCarousel();
+updateSliderBackground();
+
+// Slider kaydırıldığında kartları güncelle
+projectSlider.addEventListener('input', (e) => {
+    const maxScroll = maxIndex * projectCardWidth;
+    const offset = -(e.target.value / 100) * maxScroll;
+    projectCarousel.style.transform = `translateX(${offset}px)`;
+    
+    projectCurrentIndex = Math.round((e.target.value / 100) * maxIndex);
+    updateProjectNavButtons();
+    updateSliderBackground();
+});
+
+// Önceki butonuna tıklandığında kaydırma
+projectPrevButton.addEventListener('click', () => {
+    if (projectCurrentIndex > 0) {
+        projectCurrentIndex--;
+    } else {
+        projectCurrentIndex = maxIndex; // Başa döndüğünde sona geçiş
+    }
+    updateProjectCarousel();
+});
+
+// Sonraki butonuna tıklandığında kaydırma
+projectNextButton.addEventListener('click', () => {
+    if (projectCurrentIndex < maxIndex) {
+        projectCurrentIndex++;
+    } else {
+        projectCurrentIndex = 0; // Sona gelindiğinde başa dön
+    }
+    updateProjectCarousel();
+});
+
+// Carousel pozisyonunu güncelle
+function updateProjectCarousel() {
+    const offset = -projectCurrentIndex * projectCardWidth;
+    projectCarousel.style.transform = `translateX(${offset}px)`;
+    
+    const sliderValue = (projectCurrentIndex / maxIndex) * 100;
+    projectSlider.value = sliderValue;
+    updateSliderBackground();
+    updateProjectNavButtons();
+}
+
+// Slider'ın arka planını güncelle
+function updateSliderBackground() {
+    const sliderValue = projectSlider.value;
+    projectSlider.style.background = `linear-gradient(to right, #8a2be2 ${sliderValue}%, #ddd ${sliderValue}%)`;
+}
+
+// Butonların aktifliğini güncelle
+function updateProjectNavButtons() {
+    projectPrevButton.disabled = projectCurrentIndex === 0 && maxIndex > 0;
+    projectNextButton.disabled = projectCurrentIndex >= maxIndex;
+}
+
+// PROJECT SECTION
