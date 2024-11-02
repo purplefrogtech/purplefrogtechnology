@@ -87,106 +87,92 @@ function toggleMusic() {
 // Music Button
 
 
-// PROJECT SECTION
+document.querySelectorAll('.project-container').forEach((container, index) => {
+  const projectCarousel = container.querySelector('.project-carousel');
+  const projectCards = container.querySelectorAll('.project-card');
+  const projectSlider = container.querySelector('.project-slider');
+  const projectPrevButton = container.querySelector('#project-prev');
+  const projectNextButton = container.querySelector('#project-next');
 
-// PROJECT SECTION
+  const projectVisibleCards = 3; // Görünen kart sayısı
+  let projectCurrentIndex = 0;
 
-const projectCarousel = document.querySelector('.project-carousel');
-const projectCards = document.querySelectorAll('.project-card');
-const projectSlider = document.getElementById('project-slider');
-const projectPrevButton = document.getElementById('project-prev');
-const projectNextButton = document.getElementById('project-next');
+  // Ekran boyutuna göre kart genişliğini belirleme
+  function updateProjectCardWidth() {
+    const windowWidth = window.innerWidth;
 
-const projectVisibleCards = 3; // Görünen kart sayısı
-let projectCurrentIndex = 0;
-
-// Ekran boyutuna göre kart genişliğini belirleme
-function updateProjectCardWidth() {
-  const windowWidth = window.innerWidth;
-
-  if (windowWidth <= 364) {
-    return 440; // Küçük ekranlar (mobil)
-  } else if (windowWidth <= 576) {
-    return 380; // Orta ekranlar (tablet)
-  } else if (windowWidth <= 768) {
-    return 350; // Orta ekranlar (tablet)
-  } else if (windowWidth <= 992) {
-    return 440; // Büyük ekranlar (dizüstü)
-  } else if (windowWidth <= 1200) {
-    return 450; // Büyük ekranlar (dizüstü)
-  } else {
-    return 460; // Varsayılan genişlik (masaüstü)
+    if (windowWidth <= 364) {
+      return 440; // Küçük ekranlar (mobil)
+    } else if (windowWidth <= 576) {
+      return 380; // Orta ekranlar (tablet)
+    } else if (windowWidth <= 768) {
+      return 350; // Orta ekranlar (tablet)
+    } else if (windowWidth <= 992) {
+      return 440; // Büyük ekranlar (dizüstü)
+    } else if (windowWidth <= 1200) {
+      return 450; // Büyük ekranlar (dizüstü)
+    } else {
+      return 460; // Varsayılan genişlik (masaüstü)
+    }
   }
-}
 
-// Dinamik kart genişliği
-let projectCardWidth = updateProjectCardWidth();
-let maxIndex = projectCards.length - projectVisibleCards + 1;
+  let projectCardWidth = updateProjectCardWidth();
+  let maxIndex = projectCards.length - projectVisibleCards + 1;
 
-// Başlangıç ayarları
-updateProjectCarousel();
-updateSliderBackground();
-
-// Ekran boyutu değiştiğinde kart genişliğini güncelle
-window.addEventListener('resize', () => {
-  projectCardWidth = updateProjectCardWidth();
-  maxIndex = projectCards.length - projectVisibleCards + 1;
   updateProjectCarousel();
-});
-
-// Slider kaydırıldığında kartları güncelle
-projectSlider.addEventListener('input', (e) => {
-  const maxScroll = maxIndex * projectCardWidth;
-  const offset = -(e.target.value / 100) * maxScroll;
-  projectCarousel.style.transform = `translateX(${offset}px)`;
-
-  projectCurrentIndex = Math.round((e.target.value / 100) * maxIndex);
-  updateProjectNavButtons();
   updateSliderBackground();
-});
 
-// Önceki butonuna tıklandığında kaydırma
-projectPrevButton.addEventListener('click', () => {
-  if (projectCurrentIndex > 0) {
-    projectCurrentIndex--;
-  } else {
-    projectCurrentIndex = maxIndex; // Başa döndüğünde sona geçiş
+  window.addEventListener('resize', () => {
+    projectCardWidth = updateProjectCardWidth();
+    maxIndex = projectCards.length - projectVisibleCards + 1;
+    updateProjectCarousel();
+  });
+
+  projectSlider.addEventListener('input', (e) => {
+    const maxScroll = maxIndex * projectCardWidth;
+    const offset = -(e.target.value / 100) * maxScroll;
+    projectCarousel.style.transform = `translateX(${offset}px)`;
+
+    projectCurrentIndex = Math.round((e.target.value / 100) * maxIndex);
+    updateProjectNavButtons();
+    updateSliderBackground();
+  });
+
+  projectPrevButton.addEventListener('click', () => {
+    if (projectCurrentIndex > 0) {
+      projectCurrentIndex--;
+    } else {
+      projectCurrentIndex = maxIndex;
+    }
+    updateProjectCarousel();
+  });
+
+  projectNextButton.addEventListener('click', () => {
+    if (projectCurrentIndex < maxIndex) {
+      projectCurrentIndex++;
+    } else {
+      projectCurrentIndex = 0;
+    }
+    updateProjectCarousel();
+  });
+
+  function updateProjectCarousel() {
+    const offset = -projectCurrentIndex * projectCardWidth;
+    projectCarousel.style.transform = `translateX(${offset}px)`;
+
+    const sliderValue = (projectCurrentIndex / maxIndex) * 100;
+    projectSlider.value = sliderValue;
+    updateSliderBackground();
+    updateProjectNavButtons();
   }
-  updateProjectCarousel();
-});
 
-// Sonraki butonuna tıklandığında kaydırma
-projectNextButton.addEventListener('click', () => {
-  if (projectCurrentIndex < maxIndex) {
-    projectCurrentIndex++;
-  } else {
-    projectCurrentIndex = 0; // Sona gelindiğinde başa dön
+  function updateSliderBackground() {
+    const sliderValue = projectSlider.value;
+    projectSlider.style.background = `linear-gradient(to right, #8a2be2 ${sliderValue}%, #ddd ${sliderValue}%)`;
   }
-  updateProjectCarousel();
+
+  function updateProjectNavButtons() {
+    projectPrevButton.disabled = projectCurrentIndex === 0 && maxIndex > 0;
+    projectNextButton.disabled = projectCurrentIndex >= maxIndex;
+  }
 });
-
-// Carousel pozisyonunu güncelle
-function updateProjectCarousel() {
-  const offset = -projectCurrentIndex * projectCardWidth;
-  projectCarousel.style.transform = `translateX(${offset}px)`;
-
-  const sliderValue = (projectCurrentIndex / maxIndex) * 100;
-  projectSlider.value = sliderValue;
-  updateSliderBackground();
-  updateProjectNavButtons();
-}
-
-// Slider'ın arka planını güncelle
-function updateSliderBackground() {
-  const sliderValue = projectSlider.value;
-  projectSlider.style.background = `linear-gradient(to right, #8a2be2 ${sliderValue}%, #ddd ${sliderValue}%)`;
-}
-
-// Butonların aktifliğini güncelle
-function updateProjectNavButtons() {
-  projectPrevButton.disabled = projectCurrentIndex === 0 && maxIndex > 0;
-  projectNextButton.disabled = projectCurrentIndex >= maxIndex;
-}
-
-
-// PROJECT SECTION

@@ -456,6 +456,66 @@ button.next {
 /* Music Button */
 
 
+/* Product SECTION */
+
+.product-container {
+    display: flex;
+    gap: 20px;
+    margin: 50px 0 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .product-card h3 {
+    font-size: 1.2em;
+    margin: 16px 0;
+  }
+  
+  .product-card p {
+    color: #666;
+    font-size: 0.9em;
+    margin: 8px 0;
+  }
+  
+  .product-card button {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: auto; /* Bu satır butonu en alta sabitler */
+  }
+  
+  .product-card button:hover {
+    background-color: #005a9e;
+  }
+
+
+/* Product SECTION */
+
+
+
+
 /* PROJECT SECTION */
 
 .project-container {
@@ -883,7 +943,7 @@ button.next {
 
     .project-carousel-container {
         width: 100%;
-    
+
     }
 
     .project-carousel p {
