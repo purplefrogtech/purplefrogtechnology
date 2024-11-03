@@ -176,3 +176,4 @@ document.querySelectorAll('.project-container').forEach((container, index) => {
     projectNextButton.disabled = projectCurrentIndex >= maxIndex;
   }
 });
+
