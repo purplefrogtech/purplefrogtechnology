@@ -480,18 +480,19 @@ button.next {
 .product-image {
     width: 100%;
     height: auto;
-    border-radius: 8px 8px 0 0;
 }
 
 .product-card h3 {
-    font-size: 1.2em;
+    font-size: 1.7em;
     margin: 16px 0;
+    padding: 10px;
 }
 
 .product-card p {
     color: #666;
     font-size: 0.9em;
     margin: 8px 0;
+    padding: 10px;
 }
 
 .product-card button {
@@ -875,6 +876,18 @@ button.next {
         flex-direction: column;
 
     }
+
+    .product-card {
+        width: 250px;
+    }
+
+    .product-card h3 {
+        font-size: 1.5em;
+    }
+    
+    .product-card p {
+        font-size: 0.9em;
+    }
 }
 
 /* Orta Ekran */
@@ -1062,6 +1075,19 @@ button.next {
 
     .project-container {
         margin: 50px auto;
+    }
+
+    
+    .product-card {
+        width: 200px;
+    }
+
+    .product-card h3 {
+        font-size: 1.2em;
+    }
+    
+    .product-card p {
+        font-size: 0.8em;
     }
 }
 
