@@ -177,3 +177,57 @@ document.querySelectorAll('.project-container').forEach((container, index) => {
   }
 });
 
+// Music Button
+
+
+
+// SCROLL SECTION
+ScrollReveal().reveal('.navbar', {
+  origin: 'left',
+  distance: '50px',
+  duration: 1000,
+  delay: 100,
+  reset: true,
+});
+
+ScrollReveal().reveal('.slider-wrapper', {
+  origin: 'bottom',
+  distance: '50px',
+  duration: 1800,
+  delay: 300,
+  reset: true,
+});
+
+ScrollReveal().reveal('.product-card', {
+  origin: 'bottom',
+  distance: '120px',
+  duration: 1000,
+  delay: 600,
+  reset: true,
+});
+
+ScrollReveal().reveal('.project-container', {
+  origin: 'left',
+  distance: '80px',
+  duration: 1200,
+  delay: 300,
+  reset: true,
+});
+
+
+ScrollReveal().reveal('.footer-container', {
+  origin: 'left',
+  distance: '80px',
+  duration: 1200,
+  delay: 300,
+  reset: true,
+});
+
+ScrollReveal().reveal('.last-fot', {
+  origin: 'bottom',
+  distance: '80px',
+  duration: 1200,
+  delay: 300,
+  reset: true,
+});
+// SCROLL SECTION

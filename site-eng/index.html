@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta  -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta  -->
+
+    <title>Purplefrog Technology AI - Change world with technology power</title>
+
+    <!-- Other link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Other link -->
+
+    <!-- Project link -->
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../images/logos/favicon.png" type="image/x-icon">
+
+    <!-- Project link -->
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="navbar-logo">
+            <img src="../images/logos/square.png" alt="Resim Bulunamadı">
+            <h1 class="logo-text">Purplefrog</h1>
+        </div>
+
+
+        <div class="navbar-list">
+            <ul class="list-item">
+                <li><a href="../site-eng/index.html">Purplefrog Technology</a></li>
+                <li><a href="navbar/froggpt/index.html">FrogGPT</a></li>
+                <li><a href="navbar/purplestore/index.html">PurpleStore</a></li>
+                <li class="hide-item"><a href="navbar/products/index.html">Products</a></li>
+                <li class="hide-item"><a href="navbar/support/index.html">Support</a></li>
+                <li class="respo"><a href="#">Other<i class="fa-solid fa-chevron-down"></i></a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="last-nav">
+            <h1 class="user-text">Log in</h1>
+            <i class="user-icon"><i class="fa-solid fa-user"></i></i>
+        </div>
+
+    </nav>
+
+
+    <div class="hidebar-list">
+        <ul class="h-list-item">
+            <li><a href="navbar/products/index.html">Products</a></li>
+            <li><a href="navbar/support/index.html">Support</a></li>
+        </ul>
+    </div>
+
+    <div class="sidebar">
+        <div class="hide-btn">
+            <i class="fa-solid fa-bars open-icon"></i>
+            <i class="fa-solid fa-times close-icon"></i>
+        </div>
+        <ul class="sidebar-list">
+            <li><a href="site-eng/index.html">Purplefrog Technology</a></li>
+            <li><a href="navbar/froggpt/index.html">FrogGPT</a></li>
+            <li><a href="navbar/purplestore/index.html">PurpleStore</a></li>
+            <li><a href="navbar/products/index.html">Products</a></li>
+            <li><a href="navbar/support/index.html">Support</a></li>
+        </ul>
+    </div>
+
+
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img style="object-position: 50% center;" src="../images/slider/1.jpg" alt="Image Not Found">
+                    <div class="slider-content">
+                        <span class="tag">Coming Soon...</span>
+                        <h2>Discover the Games of the New Era!</h2>
+                        <p>Meet the games of the era; this revolution touching reality takes you to a new age.</p>
+                        <button><a href="navbar/product/index.html">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img style="object-position: 50% center;" src="../images/slider/2.jpg" alt="Image Not Found">
+                    <div class="slider-content">
+                        <!-- <span class="tag">New Release!</span> -->
+                        <h2>Join the Power of AI</h2>
+                        <p>Imagine a future where artificial intelligence collaborates with human intelligence.</p>
+                        <button><a href="navbar/froggpt/index.html">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img style="object-position: 70% center;" src="../images/slider/3.jpg" alt="Image Not Found">
+                    <div class="slider-content">
+                        <!-- <span class="tag">New Release!</span> -->
+                        <h2>Adapt to the Blockchain Future</h2>
+                        <p>Create a world fully integrated with encryption technology.</p>
+                        <button><a href="navbar/blockchain/index.html">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img style="object-position: 70% center;" src="../images/slider/4.jpg" alt="Image Not Found">
+                    <div class="slider-content">
+                        <!-- <span class="tag">New Release!</span> -->
+                        <h2>Claim Your Place in the Metaverse World</h2>
+                        <p>Explore Metaverse technology, seize your share in this world that offers new life models and
+                            simplifies life.</p>
+                        <button><a href="navbar/metaverse/index.html">Learn More</a></button>
+                    </div>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+        <!-- Slider-content copy for mobile view -->
+        <div class="slider-content-mobile"></div>
+    </div>
+
+
+    <!-- Music Button -->
+
+    <div class="music-button">
+        <button onclick="toggleMusic()" id="music-btn">
+            <i class="fa-solid fa-play"></i>
+        </button>
+        <audio id="background-music" loop>
+            <source src="../items/music/fon.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+
+    <!-- Music Button -->
+
+    <!-- Product SECTION -->
+
+    <div class="product-container">
+        <div class="product-card">
+            <img src="../images/product/product-img.jpg" alt="Image Not Found" class="product-image">
+            <h3>Play to Win Games</h3>
+            <p>Get ready to turn the thrill of competition in games into profit.</p>
+            <button>Play Now!</button>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/product/product-img2.jpg" alt="Image Not Found" class="product-image">
+            <h3>Buffet Algorithm</h3>
+            <p>Gain access to the ideas of a financial genius, a powerful financial AI.</p>
+            <button>Discover Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/product/product-img3.jpg" alt="Image Not Found" class="product-image">
+            <h3>Courier Pigeon</h3>
+            <p>Bring innovation to your logistics with drone couriers and let your shipments fly everywhere!</p>
+            <button>Pre-Order</button>
+        </div>
+
+        <div class="product-card">
+            <img src="../images/product/product-img4.jpg" alt="Game Pass" class="product-image">
+            <h3>Disaster</h3>
+            <p>Meet the most advanced AI tool analyzing natural disasters!</p>
+            <button>Try Now</button>
+        </div>
+    </div>
+
+    <!-- Product SECTION -->
+
+
+
+    <!-- Project SECTION -->
+
+    <!-- ABOUT -->
+    <div class="project-container" data-section="7">
+        <h1>About Us</h1>
+        <p class="project-dec-hide">Throughout history, every step of technology has been a reflection of humanity's
+            desire to transcend boundaries and redefine the world. At PurpleFrog Technology, we are proud to be part of
+            this dance. By blending the knowledge of the past, the creativity of today, and the potential of tomorrow,
+            we are moving toward a brighter future.<br><br><span
+                style="font-size: 11px; font-style: italic;">"Technology is making magic real." – Arthur C.
+                Clarke</span></p>
+        <div class="project-carousel-container">
+            <div class="project-carousel">
+                <p>Throughout history, every step of technology has been a reflection of humanity's desire to transcend
+                    boundaries and redefine the world. At PurpleFrog Technology, we are proud to be part of this dance.
+                    By blending the knowledge of the past, the creativity of today, and the potential of tomorrow, we
+                    are moving toward a brighter future.<br><br><span
+                        style="font-size: 13px; font-style: italic;">"Technology is making magic real." – Arthur C.
+                        Clarke</span></p>
+                <!-- Cards -->
+                <div class="project-card"><a href="../site-eng/about/vision/index.html">
+                        <img src="../images/project/about-item/1.png" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>About Us</h3>
+                            <h2>Vision and Mission</h2>
+                            <p>Seeing is not just possible by looking; we are those who can see without looking.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="">
+                        <img src="../images/project/about-item/2.png" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>About Us</h3>
+                            <h2>Company History</h2>
+                            <p>The greatest ideas come from the smallest rooms.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="">
+                        <img src="../images/project/about-item/3.png" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>About Us</h3>
+                            <h2>Products and Services</h2>
+                            <p>One thing we must accept is this: We need technology.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="">
+                        <img src="../images/project/about-item/4.png" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>About Us</h3>
+                            <h2>Values and Principles</h2>
+                            <p>Moving toward an ecosystem where technology strengthens freedom, not restricts it.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="">
+                        <img src="../images/project/about-item/5.png" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>About Us</h3>
+                            <h2>Team and Leadership</h2>
+                            <p>Being a pioneer is hard work, but finding a pioneer is even harder.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="">
+                        <img src="../images/project/about-item/6.png" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>About Us</h3>
+                            <h2>Achievements and Goals</h2>
+                            <p>Big goals are punished with a tired body.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Bar -->
+        <input type="range" min="0" max="100" value="0" class="project-slider" id="project-slider">
+
+        <!-- Navigation Buttons -->
+        <div class="project-nav-buttons">
+            <button id="project-prev">◀</button>
+            <button id="project-next">▶</button>
+        </div>
+    </div>
+    <!-- ABOUT -->
+
+    <!-- AI Revolution Section -->
+    <div class="project-container" data-section="1">
+        <h1>Artificial Intelligence Revolution</h1>
+        <p class="project-dec-hide">Artificial intelligence is at the center of change in every area, from daily life to
+            the business world. It enhances efficiency, intelligence, and sustainability by enabling early diagnosis in
+            healthcare, personalized learning in education, productivity in agriculture, and resource savings in the
+            energy sector. AI pushes boundaries, offering people opportunities to focus on creative and innovative
+            fields. Being part of this revolution shaping the future is now more meaningful than ever.</p>
+        <div class="project-carousel-container">
+            <div class="project-carousel">
+                <p>Artificial intelligence is at the center of change in every area, from daily life to the business
+                    world. It enhances efficiency, intelligence, and sustainability by enabling early diagnosis in
+                    healthcare, personalized learning in education, productivity in agriculture, and resource savings in
+                    the energy sector. AI pushes boundaries, offering people opportunities to focus on creative and
+                    innovative fields. Being part of this revolution shaping the future is now more meaningful than
+                    ever.</p>
+                <!-- Cards -->
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item1/1.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Artificial Intelligence</h3>
+                            <h2>Image Processing: How AI First Met You</h2>
+                            <p>AI and image processing can distinguish details in visuals just like humans. How does AI
+                                achieve this?</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item1/2.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Artificial Intelligence</h3>
+                            <h2>The Famous Mystery: What is the AI Black Box?</h2>
+                            <p>The "black box" mystery of AI makes decision processes incomprehensible and trust
+                                challenging. Explainable AI aims to solve this mystery.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item1/3.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Artificial Intelligence</h3>
+                            <h2>AI in Business: Which Professions Will Disappear?</h2>
+                            <p>AI is transforming the business world; some professions are at risk of extinction. What
+                                jobs might AI take over in the future?</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item1/4.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Artificial Intelligence</h3>
+                            <h2>From Robot to Human: Can AI Achieve Consciousness?</h2>
+                            <p>The idea that AI can gain consciousness is exciting. Is it possible to create truly
+                                thinking AI? Science is on the hunt for answers.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item1/5.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Artificial Intelligence</h3>
+                            <h2>AI Transforming Agriculture: The Future of Food Production</h2>
+                            <p>Smart farming with AI is changing food production. Will the food on our table one day be
+                                AI-controlled?</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item1/6.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Artificial Intelligence</h3>
+                            <h2>Mind-Reading AI: Fact or Fiction?</h2>
+                            <p>Can AI analyze brainwaves? Is thought-reading technology stepping out of science fiction?
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Bar -->
+        <input type="range" min="0" max="100" value="0" class="project-slider" id="project-slider">
+
+        <!-- Navigation Buttons -->
+        <div class="project-nav-buttons">
+            <button id="project-prev">◀</button>
+            <button id="project-next">▶</button>
+        </div>
+    </div>
+
+
+    <!-- New Era in Gaming Section -->
+    <div class="project-container" data-section="2">
+        <h1>New Era in the Gaming World</h1>
+        <p class="project-dec-hide">Next-generation games are pushing the boundaries of technology, bringing new life to
+            the gaming world both visually and experientially. With the integration of artificial intelligence (AI),
+            augmented reality (AR), virtual reality (VR), and cloud technologies into games, players are no longer just
+            spectators, but active participants in an interactive world. In the future, games will intertwine with
+            users' daily lives, offering digital universes that provide benefits across many fields, from education to
+            healthcare. The vision of the gaming industry will focus on creating creative and sustainable worlds that
+            support the personal and social development of players.</p>
+        <div class="project-carousel-container">
+            <div class="project-carousel">
+                <p>Next-generation games are pushing the boundaries of technology, bringing new life to the gaming world
+                    both visually and experientially. With the integration of artificial intelligence (AI), augmented
+                    reality (AR), virtual reality (VR), and cloud technologies into games, players are no longer just
+                    spectators, but active participants in an interactive world. In the future, games will intertwine
+                    with users' daily lives, offering digital universes that provide benefits across many fields, from
+                    education to healthcare. The vision of the gaming industry will focus on creating creative and
+                    sustainable worlds that support the personal and social development of players.</p>
+                <!-- Cards -->
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item2/1.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Gaming</h3>
+                            <h2>The Future of Games: AI, VR, and AR Revolutionizing Technologies</h2>
+                            <p>This article could explore how technological advancements increasingly present in the
+                                gaming world are transforming the player experience.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item2/2.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Gaming</h3>
+                            <h2>Metaverse and the Gaming World: Innovations Brought by Digital Universes</h2>
+                            <p>This article could examine how the metaverse is making waves in the gaming industry and
+                                what players can experience in these universes.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item2/3.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Gaming</h3>
+                            <h2>The Social Impact of Games: Games Becoming a Lifestyle for Today's Youth</h2>
+                            <p>This article could examine the impact of games on social life, education, and personal
+                                development.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item2/4.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Gaming</h3>
+                            <h2>The Future of Gaming with Cloud Gaming Services: Goodbye to Consoles?</h2>
+                            <p>This article could discuss the advantages and disadvantages of cloud gaming technology,
+                                especially for those curious about how next-gen games will evolve.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item2/5.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Gaming</h3>
+                            <h2>NFT and Blockchain-based Games: Digital Collectibles and Player Economies</h2>
+                            <p>This article could explore how NFT and blockchain technology are creating a new economy
+                                in the gaming industry, attracting those interested in investment and digital ownership.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item2/6.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Gaming</h3>
+                            <h2>Indie Games: Big Successes and Creative Game Experiences from Small Teams</h2>
+                            <p>This article could highlight how indie games have grown in the industry, their innovative
+                                approaches, and the features that attract players.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Bar -->
+        <input type="range" min="0" max="100" value="0" class="project-slider" id="project-slider">
+
+        <!-- Navigation Buttons -->
+        <div class="project-nav-buttons">
+            <button id="project-prev">◀</button>
+            <button id="project-next">▶</button>
+        </div>
+    </div>
+
+
+    <!-- Metaverse Universe Section -->
+    <div class="project-container" data-section="3">
+        <h1>Metaverse Universe</h1>
+        <p class="project-dec-hide">Artificial intelligence is at the heart of transformation, impacting every field,
+            from daily life to business. By providing early diagnosis in healthcare, personalized learning in education,
+            increased productivity in agriculture, and resource conservation in the energy sector, AI is making life
+            smarter, more efficient, and sustainable. AI pushes boundaries and offers people opportunities to focus on
+            creative and innovative areas. Being a part of this revolution that shapes the future is more meaningful
+            than ever.</p>
+        <div class="project-carousel-container">
+            <div class="project-carousel">
+                <p>Artificial intelligence is at the heart of transformation, impacting every field, from daily life to
+                    business. By providing early diagnosis in healthcare, personalized learning in education, increased
+                    productivity in agriculture, and resource conservation in the energy sector, AI is making life
+                    smarter, more efficient, and sustainable. AI pushes boundaries and offers people opportunities to
+                    focus on creative and innovative areas. Being a part of this revolution that shapes the future is
+                    more meaningful than ever.</p>
+                <!-- Cards -->
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item3/1.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Metaverse</h3>
+                            <h2>Metaverse and AI: The Rise of Smart Avatars</h2>
+                            <p>AI-powered avatars are enriching users' metaverse experiences and making interactions
+                                more natural.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item3/2.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Metaverse</h3>
+                            <h2>AI and the Metaverse Economy: Earning in a Digital World</h2>
+                            <p>AI is creating virtual job opportunities in the metaverse, giving rise to a new digital
+                                economy.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item3/3.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Metaverse</h3>
+                            <h2>AI-Powered Education: A Learning Revolution in the Metaverse</h2>
+                            <p>The metaverse and AI are offering personalized and interactive learning environments in
+                                education.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item3/4.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Metaverse</h3>
+                            <h2>AI and Security in the Metaverse: Digital Protection</h2>
+                            <p>AI is enhancing security in the metaverse, protecting users from digital threats.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item3/5.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Metaverse</h3>
+                            <h2>AI and Metaverse Art: The New Face of Digital Creativity</h2>
+                            <p>AI is redefining art in the metaverse and opening doors to explore digital creations.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item3/6.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Metaverse</h3>
+                            <h2>AI-Powered Social Interaction in the Metaverse</h2>
+                            <p>AI is personalizing social interactions in the metaverse, strengthening digital
+                                communities.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Bar -->
+        <input type="range" min="0" max="100" value="0" class="project-slider" id="project-slider">
+
+        <!-- Navigation Buttons -->
+        <div class="project-nav-buttons">
+            <button id="project-prev">◀</button>
+            <button id="project-next">▶</button>
+        </div>
+    </div>
+
+
+    <!-- Blockchain World Order Section -->
+    <div class="project-container" data-section="4">
+        <h1>Blockchain World Order</h1>
+        <p class="project-dec-hide">Artificial intelligence is at the heart of transformation, impacting every field,
+            from daily life to business. By providing early diagnosis in healthcare, personalized learning in education,
+            increased productivity in agriculture, and resource conservation in the energy sector, AI is making life
+            smarter, more efficient, and sustainable. AI pushes boundaries and offers people opportunities to focus on
+            creative and innovative areas. Being a part of this revolution that shapes the future is more meaningful
+            than ever.</p>
+        <div class="project-carousel-container">
+            <div class="project-carousel">
+                <p>Artificial intelligence is at the heart of transformation, impacting every field, from daily life to
+                    business. By providing early diagnosis in healthcare, personalized learning in education, increased
+                    productivity in agriculture, and resource conservation in the energy sector, AI is making life
+                    smarter, more efficient, and sustainable. AI pushes boundaries and offers people opportunities to
+                    focus on creative and innovative areas. Being a part of this revolution that shapes the future is
+                    more meaningful than ever.</p>
+                <!-- Cards -->
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item4/1.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Blockchain</h3>
+                            <h2>Blockchain: The Internet of the Future?</h2>
+                            <p>Explore the innovations brought by blockchain to the internet's operation and how its
+                                decentralized vision will play a role in the future.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item4/2.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Blockchain</h3>
+                            <h2>Web3 and Blockchain: Transition to a Decentralized World</h2>
+                            <p>We explain how blockchain, along with the Web3 revolution, offers liberating
+                                infrastructure for individuals and institutions.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item4/3.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Blockchain</h3>
+                            <h2>The Technology Behind NFTs: Blockchain</h2>
+                            <p>Discover how blockchain ensures the uniqueness and immutability of NFTs, securing digital
+                                assets.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item4/4.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Blockchain</h3>
+                            <h2>Cryptocurrencies: Redefining Finance</h2>
+                            <p>Learn how blockchain technology behind popular cryptocurrencies like Bitcoin and Ethereum
+                                is transforming the financial sector.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item4/5.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Blockchain</h3>
+                            <h2>Revolution with Smart Contracts: The Power of Blockchain</h2>
+                            <p>Explore the potential of smart contracts, which allow companies and individuals to
+                                automate processes and perform secure, transparent transactions.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item4/6.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Blockchain</h3>
+                            <h2>Blockchain and Cybersecurity: An Unbreakable Shield?</h2>
+                            <p>Learn how blockchain's decentralized structure is redefining data security and providing
+                                robust defense against cyberattacks.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Bar -->
+        <input type="range" min="0" max="100" value="0" class="project-slider" id="project-slider">
+
+        <!-- Navigation Buttons -->
+        <div class="project-nav-buttons">
+            <button id="project-prev">◀</button>
+            <button id="project-next">▶</button>
+        </div>
+    </div>
+
+
+
+    <!-- The Kingdom of Automations Section -->
+    <div class="project-container" data-section="5">
+        <h1>The Kingdom of Automations</h1>
+        <p class="project-dec-hide">Automation software are powerful tools that enhance productivity by automating
+            repetitive and time-consuming tasks. They provide speed, accuracy, and cost savings in various sectors, from
+            production to marketing in the business world. In daily life, applications like smart devices and health
+            tracking make life easier. Automation offers people the opportunity to focus on more strategic and creative
+            areas, improving quality of life.</p>
+        <div class="project-carousel-container">
+            <div class="project-carousel">
+                <p>Automation software are powerful tools that enhance productivity by automating repetitive and
+                    time-consuming tasks. They provide speed, accuracy, and cost savings in various sectors, from
+                    production to marketing in the business world. In daily life, applications like smart devices and
+                    health tracking make life easier. Automation offers people the opportunity to focus on more
+                    strategic and creative areas, improving quality of life.</p>
+                <!-- Cards -->
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item5/1.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Automations</h3>
+                            <h2>How Can You Save Time with Automation Software?</h2>
+                            <p>Discover how automation software can save you time in everyday tasks.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item5/2.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Automations</h3>
+                            <h2>The Future of Automation in Business: Boosting Efficiency and Speed</h2>
+                            <p>We explore how automation is rapidly spreading in business and transforming processes.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item5/3.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Automations</h3>
+                            <h2>Smart Homes and Automation: How Technology is Revolutionizing the Home</h2>
+                            <p>Learn how home automation software improves quality of life at home.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item5/4.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Automations</h3>
+                            <h2>How Can You Improve Customer Experience with Automation Software?</h2>
+                            <p>Discover how CRM and automation software make a difference in customer service.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item5/5.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Automations</h3>
+                            <h2>Automation and Artificial Intelligence: Smarter Ways to Work Together</h2>
+                            <p>Explore how combining automation software and AI creates smarter business processes.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item5/6.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Automations</h3>
+                            <h2>How to Build a Successful Automation Strategy?</h2>
+                            <p>Learn the key steps to create a roadmap for automating your business processes.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Bar -->
+        <input type="range" min="0" max="100" value="0" class="project-slider" id="project-slider">
+
+        <!-- Navigation Buttons -->
+        <div class="project-nav-buttons">
+            <button id="project-prev">◀</button>
+            <button id="project-next">▶</button>
+        </div>
+    </div>
+
+
+    <!-- The Equipment of the New Era Section -->
+    <div class="project-container" data-section="6">
+        <h1>The Equipment of the New Era</h1>
+        <p class="project-dec-hide">The future's equipment will feature quantum processors for super-fast data
+            processing, neural interfaces for human-computer integration, and metamaterials to offer lighter and more
+            durable devices. Additionally, self-repairing and energy-independent systems will push technology beyond our
+            imagination. These innovations are set to revolutionize every field, from daily life to space technologies.
+        </p>
+        <div class="project-carousel-container">
+            <div class="project-carousel">
+                <p>The future's equipment will feature quantum processors for super-fast data processing, neural
+                    interfaces for human-computer integration, and metamaterials to offer lighter and more durable
+                    devices. Additionally, self-repairing and energy-independent systems will push technology beyond our
+                    imagination. These innovations are set to revolutionize every field, from daily life to space
+                    technologies.</p>
+                <!-- Cards -->
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item6/1.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Equipment</h3>
+                            <h2>Quantum Processors: The Key to the Supercomputer Era</h2>
+                            <p>Discover how quantum technology differs from traditional processors and the incredible
+                                speed and capacity difference.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item6/2.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Equipment</h3>
+                            <h2>Neural Interfaces: Managing Devices with the Power of Thought</h2>
+                            <p>Explore innovations in brain-computer integration, from gaming to the healthcare sector.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item6/3.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Equipment</h3>
+                            <h2>Metamaterials: The Light and Durable Future Devices</h2>
+                            <p>Learn how metamaterials are shaping the future, from spacecraft to wearable technologies.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item6/4.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Equipment</h3>
+                            <h2>Biometric Technologies: The Age of Perfect Human-Machine Harmony</h2>
+                            <p>Insights into technologies that analyze body data and enhance the machine-human
+                                connection.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item6/5.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Equipment</h3>
+                            <h2>Self-Repairing Equipment: Leaving Damages in the Past</h2>
+                            <p>Discover how broken devices repair themselves and which fields this technology could be
+                                used in.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-card"><a href="https://medium.com/@purplefrogtechnology">
+                        <img src="../images/project/blog-item6/6.jpg" alt="Image Not Found">
+                        <div class="project-card-content">
+                            <h3>Blog | Equipment</h3>
+                            <h2>Energy-Independent Systems: Fully Autonomous Devices of the Future</h2>
+                            <p>The rise of systems that operate on natural sources like solar and kinetic energy,
+                                eliminating the need for charging.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Bar -->
+        <input type="range" min="0" max="100" value="0" class="project-slider" id="project-slider">
+
+        <!-- Navigation Buttons -->
+        <div class="project-nav-buttons">
+            <button id="project-prev">◀</button>
+            <button id="project-next">▶</button>
+        </div>
+    </div>
+
+
+    <!-- Project SECTION -->
+
+
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <ul>
+                    <h1 class="footer-column-header">Operations</h1>
+                    <li><a href="footer/investors/index.html">Investors</a></li>
+                    <li><a href="footer/sponsors/index.html">Sponsors</a></li>
+                    <li><a href="footer/technologies/index.html">Technologies</a></li>
+                    <li><a href="footer/sustainability/index.html">Sustainability</a></li>
+                    <li><a href="footer/discoveries/index.html">Discoveries</a></li>
+                    <li><a href="footer/software/index.html">Software</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <ul>
+                    <h1 class="footer-column-header">Services</h1>
+                    <li><a href="navbar/froggpt/index.html">FrogGPT</a></li>
+                    <li><a href="navbar/purplestore/index.html">PurpleStore</a></li>
+                    <li><a href="navbar/products/index.html">Products</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <ul>
+                    <h1 class="footer-column-header">Purplefrog Technology</h1>
+                    <li><a href="footer2/about-us/index.html">Vision and Mission</a></li>
+                    <li><a href="footer2/blog/index.html">Company History</a></li>
+                    <li><a href="footer2/team/index.html">Products and Services</a></li>
+                    <li><a href="footer2/trainings/index.html">Values and Principles</a></li>
+                    <li><a href="footer2/blog/index.html">Team and Leadership</a></li>
+                    <li><a href="footer2/news/index.html">Achievements and Future Goals</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <ul>
+                    <h1 class="footer-column-header">Legal Terms</h1>
+                    <li><a href="footer3/privacy-policy/index.html">Privacy Policy</a></li>
+                    <li><a href="footer3/terms-of-use/index.html">Terms of Use</a></li>
+                    <li><a href="footer3/cookie-policies/index.html">Cookie Policy</a></li>
+                    <li><a href="footer3/about-payments/index.html">About Payments</a></li>
+                    <li><a href="footer3/about-investing/index.html">About Investing</a></li>
+                    <li><a href="footer3/about-sponsorship/index.html">About Sponsorship</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <ul>
+                    <h1 class="footer-column-header">Company</h1>
+                    <li><a href="navbar/support/index.html">Support</a></li>
+                    <li><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSeedXkyo6JO5E83xNxkZPVq2uZCuoCCa9rpdWJrN27-FKoUOg/viewform?usp=sf_link">Careers</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="social-media">
+                <a href="https://github.com/purplefrogtech" title="Github"><i class="fa-brands fa-github"></i></i></a>
+                <a href="https://www.facebook.com/people/Purplefrog-Tech-AI/61566555040101/" title="Facebook"><i
+                        class="fa-brands fa-facebook"></i></i></a>
+                <a href="https://x.com/PurplefrogTech" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/purplefrogtech/" title="Instagram"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/purplefrogtechai?trk=public_profile_topcard-current-company"
+                    title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@purplefrogtech" title="Youtube"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://medium.com/@purplefrogtechnology" title="Medium"><i
+                        class="fa-brands fa-medium"></i></a>
+            </div>
+
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="last-fot">
+            <div class="slect-lang">
+                <div class="lang-item">
+                    <h4 class="select-lang-text">Türkçe</h4>
+                    <a href="../index.html"><i class="fa-solid fa-language"></i></a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 Purplefrog Technology. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- FOOTER SECTION -->
+
+    <!-- SCROLL JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- SCROLL JS -->
+
+    <!-- MAIN JS -->
+
+    <script src="main.js"></script>
+    <!-- MAIN JS -->
+
+</body>
+
+</html>
