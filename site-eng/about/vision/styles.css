@@ -292,6 +292,7 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 4rem
 }
 
 .text-section {
@@ -306,10 +307,11 @@ li {
     /* Resmi sağ tarafa hizalar */
     margin-left: 20px;
     /* Resim ile yazı arasında boşluk bırakır */
-    width: 600px;
+    width: 500px;
     /* Resim genişliği */
     height: auto;
     /* Oranlı görünüm */
+
 }
 
 .text-title {
@@ -321,7 +323,7 @@ li {
 }
 
 .text-paragraph {
-    font-size: 20px;
+    font-size: 17px;
     text-align: justify;
     /* Metni düzgün hizalar */
     line-height: 1.7;
@@ -342,6 +344,7 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 4rem
 }
 
 .text-section-left {
@@ -356,7 +359,7 @@ li {
     /* Resmi sağ tarafa hizalar */
     margin-right: 20px;
     /* Resim ile yazı arasında boşluk bırakır */
-    width: 600px;
+    width: 500px;
     /* Resim genişliği */
     height: auto;
     /* Oranlı görünüm */
@@ -371,7 +374,7 @@ li {
 }
 
 .text-paragraph-left {
-    font-size: 20px;
+    font-size: 17px;
     text-align: justify;
     /* Metni düzgün hizalar */
     line-height: 1.7;
@@ -386,6 +389,14 @@ li {
 }
 
 /* LEFT */
+
+.span {
+    font-size: 15px;
+    font-style: italic;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
 
 /* TEXT SECTION */
 
@@ -552,13 +563,13 @@ li {
     }
 
     .text-paragraph {
-        font-size: 15px;
-        line-height: 1.6;
+        font-size: 14px;
+        line-height: 1.5;
     }
 
-       /* LEFT */
+    /* LEFT */
 
-       .text-img-left {
+    .text-img-left {
         width: 400px;
     }
 
@@ -567,8 +578,13 @@ li {
     }
 
     .text-paragraph-left {
-        font-size: 15px;
-        line-height: 1.6;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .span {
+        font-size: 12px;
+        font-style: italic;
     }
 
 }
@@ -601,7 +617,7 @@ li {
     }
 
     .text-img {
-        width: 300px;
+        width: 270px;
     }
 
     .text-title {
@@ -609,14 +625,14 @@ li {
     }
 
     .text-paragraph {
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: 12px;
+        line-height: 1.3;
     }
 
-       /* LEFT */
+    /* LEFT */
 
-       .text-img-left {
-        width: 300px;
+    .text-img-left {
+        width: 270px;
     }
 
     .text-title-left {
@@ -624,8 +640,13 @@ li {
     }
 
     .text-paragraph-left {
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .span {
+        font-size: 10px;
+        font-style: italic;
     }
 
 }
@@ -666,7 +687,7 @@ li {
 
 
     .text-img {
-        width: 200px;
+        width: 230px;
     }
 
     .text-title {
@@ -674,14 +695,14 @@ li {
     }
 
     .text-paragraph {
-        font-size: 12px;
-        line-height: 1.4;
+        font-size: 11px;
+        line-height: 1.3;
     }
 
-       /* LEFT */
+    /* LEFT */
 
-       .text-img-left {
-        width: 200px;
+    .text-img-left {
+        width: 230px;
     }
 
     .text-title-left {
@@ -689,9 +710,15 @@ li {
     }
 
     .text-paragraph-left {
-        font-size: 12px;
-        line-height: 1.4;
+        font-size: 11px;
+        line-height: 1.3;
     }
+
+    .span {
+        font-size: 10px;
+        font-style: italic;
+    }
+
 }
 
 /* Küçük Ekran */
@@ -759,7 +786,7 @@ li {
     }
 
     .text-img {
-        width: 190px;
+        width: 210px;
     }
 
     .text-title {
@@ -767,14 +794,14 @@ li {
     }
 
     .text-paragraph {
-        font-size: 11px;
+        font-size: 9px;
         line-height: 1.3;
     }
 
     /* LEFT */
 
     .text-img-left {
-        width: 190px;
+        width: 210px;
     }
 
     .text-title-left {
@@ -782,8 +809,14 @@ li {
     }
 
     .text-paragraph-left {
-        font-size: 11px;
+        font-size: 9px;
         line-height: 1.3;
+    }
+
+
+    .span {
+        font-size: 8px;
+        font-style: italic;
     }
 }
 
