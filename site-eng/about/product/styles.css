@@ -313,7 +313,6 @@ li {
     /* Oranlı görünüm */
     border-radius: 20px;
     padding: 15px;
-
 }
 
 .text-title {
@@ -405,6 +404,70 @@ li {
 /* TEXT SECTION */
 
 
+
+
+/* BRAND SECTION */
+.brand-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-section {
+    display: flex;
+    padding: 35px 0px 0px 35px;
+}
+
+.brand-text {
+    font-size: 19px;
+    font-weight: 700;
+    background-color: rgb(174, 30, 210);
+    padding: 0px 50px 0px 50px;
+    color: white;
+}
+
+.brand-text h1 {
+    width: 100px;
+    /* Her bir h1 için sabit genişlik */
+    text-align: center;
+    /* İçeriği ortala */
+
+}
+
+/* BRAND SECTION */
+
+/* BRAND SECTION2 */
+
+.brand-section2 {
+    display: flex;
+    padding: 35px 0px 0px 35px;
+}
+
+.brand-text2 {
+    font-size: 19px;
+    font-weight: 700;
+    background-color: var(--primary-color);
+    padding: 0px 50px 0px 50px;
+   
+}
+
+.brand-text2 h1{
+    width: 100px;
+    /* Her bir h1 için sabit genişlik */
+    text-align: center;
+    /* İçeriği ortala */
+
+}
+
+.brand-text2 a{
+    color: var(--bold-color);
+}
+
+.brand-text2 a:hover{
+    color: var(--paragraph-color);
+}
+
+/* BRAND SECTION2 */
 
 /* Footer SECTION */
 
@@ -591,6 +654,40 @@ li {
         font-style: italic;
     }
 
+
+    .brand-section {
+        display: flex;
+        padding: 15px 0px 0px 15px;
+    }
+
+    .brand-text {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0px 19px 0px 19px;
+    }
+
+    .brand-text h1 {
+        width: 90px;
+    }
+
+
+
+    .brand-section2 {
+        display: flex;
+        padding: 15px 0px 0px 15px;
+    }
+
+    .brand-text2 {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0px 19px 0px 19px;
+    }
+
+    .brand-text2 h1 {
+        width: 90px;
+    }
+
+
 }
 
 @media (min-width:993px) {
@@ -651,6 +748,38 @@ li {
     .span {
         font-size: 10px;
         font-style: italic;
+    }
+
+    .brand-section {
+        display: flex;
+        padding: 12px 0px 0px 12px;
+    }
+
+    .brand-text {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 0px 16px 0px 16px;
+    }
+
+    .brand-text h1 {
+        width: 80px;
+    }
+
+
+
+    .brand-section2 {
+        display: flex;
+        padding: 12px 0px 0px 12px;
+    }
+
+    .brand-text2 {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 0px 16px 0px 16px;
+    }
+
+    .brand-text2 h1 {
+        width: 80px;
     }
 
 }
@@ -721,6 +850,39 @@ li {
     .span {
         font-size: 10px;
         font-style: italic;
+    }
+
+
+    .brand-section {
+        display: flex;
+        padding: 10px 0px 0px 10px;
+    }
+
+    .brand-text {
+        font-size: 10px;
+        font-weight: 500;
+        padding: 0px 14px 0px 14px;
+    }
+
+    .brand-text h1 {
+        width: 70px;
+    }
+
+
+
+    .brand-section2 {
+        display: flex;
+        padding: 10px 0px 0px 10px;
+    }
+
+    .brand-text2 {
+        font-size: 10px;
+        font-weight: 500;
+        padding: 0px 14px 0px 14px;
+    }
+
+    .brand-text2 h1 {
+        width: 70px;
     }
 
 }
@@ -821,6 +983,38 @@ li {
     .span {
         font-size: 8px;
         font-style: italic;
+    }
+
+    .brand-section {
+        display: flex;
+        padding: 8px 0px 0px 8px;
+    }
+
+    .brand-text {
+        font-size: 9px;
+        font-weight: 500;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .brand-text h1 {
+        width: 60px;
+    }
+
+
+
+    .brand-section2 {
+        display: flex;
+        padding: 8px 0px 0px 8px;
+    }
+
+    .brand-text2 {
+        font-size: 9px;
+        font-weight: 500;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .brand-text2 h1 {
+        width: 60px;
     }
 }
 
