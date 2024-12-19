@@ -61,7 +61,6 @@ li {
     margin-bottom: 10px;
 }
 
-
 /* NAV SECTION */
 
 nav {
@@ -201,13 +200,14 @@ li {
 .hide-btn {
     display: none;
     position: absolute;
-    left: 2%;
-    top: 2%;
+    left: 5%;
+    top: 1.8%;
 }
 
 .hide-btn i {
     font-size: 19px;
     cursor: pointer;
+    align-items: center;
 }
 
 /* Çarpı ikonu başlangıçta gizli olacak */
@@ -999,6 +999,19 @@ button.next {
         height: 250px;
     }
 
+    
+    .navbar-logo img {
+        margin-left: 40px;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: ease-in 0.5s;
+        margin: 0;
+    }
 }
 
 /* Küçük Ekran */
@@ -1058,12 +1071,12 @@ button.next {
     }
 
     .hide-btn {
-        left: 2.5%;
-        top: 1.8%;
+        left: 5%;
+        top: 1.6%;
     }
 
     .hide-btn i {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .music-button {
@@ -1080,7 +1093,7 @@ button.next {
 
     
     .product-card {
-        width: 400px;
+        width: 300px;
     }
 
     .product-card h3 {
@@ -1089,6 +1102,62 @@ button.next {
     
     .product-card p {
         font-size: 0.8em;
+    }
+
+
+
+    .project-container {
+        margin: 40px auto;
+    }
+
+    .project-container h1 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .project-carousel-container {
+        width: 100%;
+
+    }
+
+    .project-carousel p {
+        font-size: 12px;
+        font-weight: 300;
+        width: 10%;
+        margin-right: 30px;
+        display: none;
+    }
+
+    .project-dec-hide {
+        display: block;
+    }
+
+    .project-card h2 {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .project-card h3 {
+        font-weight: 500;
+        font-size: 0.6rem;
+        color: #333;
+        margin-bottom: 8px
+    }
+
+    .project-card p {
+        width: 78%;
+        font-size: 0.6rem;
+        color: #555;
+    }
+
+    .project-card {
+        width: 220px;
+
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 180px;
     }
 }
 

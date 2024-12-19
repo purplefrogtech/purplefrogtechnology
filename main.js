@@ -102,9 +102,9 @@ document.querySelectorAll('.project-container').forEach((container, index) => {
     const windowWidth = window.innerWidth;
 
     if (windowWidth <= 364) {
-      return 440; // Küçük ekranlar (mobil)
+      return 290; // Küçük ekranlar (mobil)
     } else if (windowWidth <= 576) {
-      return 380; // Orta ekranlar (tablet)
+      return 310; // Orta ekranlar (tablet)
     } else if (windowWidth <= 768) {
       return 350; // Orta ekranlar (tablet)
     } else if (windowWidth <= 992) {
