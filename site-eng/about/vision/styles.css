@@ -61,7 +61,6 @@ li {
     margin-bottom: 10px;
 }
 
-
 /* NAV SECTION */
 
 nav {
@@ -201,13 +200,14 @@ li {
 .hide-btn {
     display: none;
     position: absolute;
-    left: 2%;
-    top: 2%;
+    left: 5%;
+    top: 1.8%;
 }
 
 .hide-btn i {
     font-size: 19px;
     cursor: pointer;
+    align-items: center;
 }
 
 /* Çarpı ikonu başlangıçta gizli olacak */
@@ -999,6 +999,19 @@ button.next {
         height: 250px;
     }
 
+    .navbar-logo img {
+        margin-left: 40px;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: ease-in 0.5s;
+        margin: 0;
+    }
+
 }
 
 /* Küçük Ekran */
@@ -1058,12 +1071,12 @@ button.next {
     }
 
     .hide-btn {
-        left: 2.5%;
-        top: 1.8%;
+        left: 5%;
+        top: 1.6%;
     }
 
     .hide-btn i {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .music-button {

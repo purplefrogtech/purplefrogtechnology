@@ -61,7 +61,6 @@ li {
     margin-bottom: 10px;
 }
 
-
 /* NAV SECTION */
 
 nav {
@@ -201,13 +200,14 @@ li {
 .hide-btn {
     display: none;
     position: absolute;
-    left: 2%;
-    top: 2%;
+    left: 5%;
+    top: 1.8%;
 }
 
 .hide-btn i {
     font-size: 19px;
     cursor: pointer;
+    align-items: center;
 }
 
 /* Çarpı ikonu başlangıçta gizli olacak */
@@ -249,6 +249,176 @@ li {
 
 /* Sidebar SECTION */
 
+
+
+
+/* Slider SECTION */
+
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    /* Görüntüyü yukarı doğru çekmek için */
+
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: left;
+    max-width: 400px;
+    color: #fff;
+}
+
+.slider-content a {
+    color: #fff;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #51cb51;
+    /* Vurgulu yeşil renk */
+    color: #000;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.slider-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.slider-content p {
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.slider-content button {
+    background-color: var(--bold-color);
+    color: #fff;
+    padding: 10px 70px;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 1px;
+    transition: background-color 0.5s ease;
+}
+
+.slider-content button:hover {
+    background-color: var(--hover-color);
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(12, 12, 12, 0.5);
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 21px;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* Mobil versiyon slider content */
+.slider-content-mobile {
+    flex-wrap: nowrap;
+    display: none;
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: left;
+}
+
+.slider-content-mobile a {
+    color: #fff;
+}
+
+.slider-content-mobile .tag {
+    margin-bottom: 10px;
+    background-color: #51cb51;
+    /* Vurgulu yeşil renk */
+    color: #000;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.slider-content-mobile h2 {
+    color: var(--text-color);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.slider-content-mobile p {
+    color: var(--paragraph-color);
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.slider-content-mobile button {
+    background-color: var(--bold-color);
+    color: #fff;
+    padding: 10px 70px;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.slider-content-mobile button:hover {
+    background-color: var(--hover-color);
+}
+
+
+/* Slider SECTION */
 
 
 /* Music Button */
@@ -723,6 +893,19 @@ li {
         font-style: italic;
     }
 
+    .navbar-logo img {
+        margin-left: 40px;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: ease-in 0.5s;
+        margin: 0;
+    }
+
 }
 
 /* Küçük Ekran */
@@ -738,6 +921,16 @@ li {
 
     .navbar-logo img {
         width: 40px;
+    }
+
+    
+    .hide-btn {
+        left: 5%;
+        top: 1.6%;
+    }
+
+    .hide-btn i {
+        font-size: 17px;
     }
 
     .user-icon {
@@ -773,12 +966,12 @@ li {
     }
 
     .hide-btn {
-        left: 2.5%;
-        top: 1.8%;
+        left: 5%;
+        top: 1.6%;
     }
 
     .hide-btn i {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .music-button {

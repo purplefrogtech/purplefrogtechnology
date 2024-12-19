@@ -1012,6 +1012,19 @@ button.next {
         transition: ease-in 0.5s;
         margin: 0;
     }
+
+    .navbar-logo img {
+        margin-left: 40px;
+    }
+    
+    .logo-text {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--text-color);
+        cursor: pointer;
+        transition: ease-in 0.5s;
+        margin: 0;
+    }
 }
 
 /* Küçük Ekran */
