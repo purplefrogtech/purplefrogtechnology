@@ -976,34 +976,11 @@ button.next {
         width: 140px;
     }
 
-    .text-title {
-        font-size: 20px;
-    }
-
-    .text-paragraph {
-        font-size: 8px;
-        line-height: 1;
-    }
 
     /* LEFT */
 
     .text-img-left {
         width: 140px;
-    }
-
-    .text-title-left {
-        font-size: 20px;
-    }
-
-    .text-paragraph-left {
-        font-size: 8px;
-        line-height: 1;
-    }
-
-
-    .span {
-        font-size: 7px;
-        font-style: italic;
     }
 }
 
